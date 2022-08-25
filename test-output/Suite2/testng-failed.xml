@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite2]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test runner2(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="TestScript.VerifyOnlineAdmissionSystem">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="verifyapplicationForm"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- TestScript.VerifyOnlineAdmissionSystem -->
+    </classes>
+  </test> <!-- Test runner2(failed) -->
+  <test thread-count="2" parallel="tests" name="Test runner1(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="TestScript.VerifyOnlineAdmissionSystem">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="verifyapplicationForm"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- TestScript.VerifyOnlineAdmissionSystem -->
+    </classes>
+  </test> <!-- Test runner1(failed) -->
+</suite> <!-- Failed suite [Suite2] -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite2">
+  <test thread-count="2" parallel="tests" name="Test Runner"/>
+  <test name = "Test-Runner-Chrome">
+  <parameter name= "BROWSER" value="chrome"/>
+    <classes>
+      <class name="dummyproject.Updateaccount"/>
+      <class name="dummyproject.demo1"/>
+      <class name="dummyproject.StudentTest"/>
+      <class name="dummyproject.softassert1"/>
+     
+    </classes>
+  </test> <!-- Test Runner -->
+  
+   <test thread-count="2" parallel="tests" name="Test Runner1">
+  <parameter name= "Browser" value="firefox"/>
+    <classes>
+
+      <class name="dummyproject.Deleteaccount"/>
+      <class name="dummyproject.Createform"/>
+      <class name="dummyproject.Createaccount"/>
+    </classes>
+    </test>
+</suite> <!-- Suite2 -->
